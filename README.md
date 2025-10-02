@@ -1,35 +1,15 @@
-# Real-Time Bidding (RTB) Simulator — Prototype 
+# RTB Auction Simulator 
 
-### Overview
-Designed a **prototype of a Real-Time Bidding (RTB) system** inspired by programmatic advertising platforms.  
-Implemented a simple **Threshold Bidder strategy** and an **auction evaluator** to simulate second-price auctions.
+This is a small **prototype / learning implementation** inspired by `amazon-science/auction-gym` (link: https://github.com/amazon-science/auction-gym).
 
-This aligns with my resume project:
-*“Built a scalable, low-latency simulation of an RTB system inspired by programmatic advertising platforms.”*
+## What I added
+- `my_strategy.py` — `ThresholdBidder`: bids = base_bid * user_score, capped at max_bid.
+- `evaluate.py` — runs N simulated auctions (second-price logic), prints:
+  - Win rate
+  - Average clearing price
 
----
+## How to view (no runtime artifacts here)
+Files are visible in this repo. This is a demo implementation prepared to explain auction logic and bidding strategy during technical interviews.
 
-### Tech Stack
-- **Language**: Python 3  
-- **Libraries**: Random, Statistics (standard library)  
-- **Concepts**: Concurrency in bidding, second-price auctions, ad-tech latency constraints
-
----
-
-### Concepts Demonstrated
-- **Auction Logic**: Highest bid wins, winner pays the second-highest price.  
-- **Bidder Strategy**: Threshold-based bidding (`base × user_score`, capped by `max_bid`).  
-- **Evaluation**: Measures **win rate** and **average clearing price** across N auctions.  
-
----
-
-### Files
-- `my_strategy.py` → Implements `ThresholdBidder` strategy.  
-- `evaluate.py` → Runs N auctions, prints win rate & avg clearing price.  
-- `results.txt` (optional) → Example simulation output.  
-
----
-
-### How to Use
-```bash
-python evaluate.py
+## Honesty note
+This is a prototype created for learning and demonstration. It is **not** a production RTB platform. The implementation is inspired by public educational repos; see the upstream link above.
