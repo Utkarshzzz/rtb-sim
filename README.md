@@ -11,5 +11,3 @@ This is a small **prototype / learning implementation** inspired by `amazon-scie
 ## How to view (no runtime artifacts here)
 Files are visible in this repo. This is a demo implementation prepared to explain auction logic and bidding strategy
 
-## Honesty note
-This is a prototype created for learning and demonstration. It is **not** a production RTB platform. The implementation is inspired by public educational repos; see the upstream link above.
